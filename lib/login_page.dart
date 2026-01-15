@@ -113,7 +113,7 @@ class _LoginPageState extends State<LoginPage> {
         print('Successfully signed in with Google: ${userCredential.user?.email}');
       } else {
         setState(() {
-          _errorMessage = 'Google Sign-In was cancelled or failed';
+          _errorMessage = 'Google Sign-In has been cancelled or failed';
         });
       }
     } catch (e) {
